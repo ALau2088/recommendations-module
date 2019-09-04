@@ -7,7 +7,7 @@
   "engines": {
     "node": ">=6.13.0"
   },
-  "jest-junit":{
+  "jest-junit": {
     "outputDirectory": "./test-results/junit",
     "outputName": "results.xml"
   },
@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "axios": "^0.19.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "faker": "^4.1.0",
     "jest-junit": "^8.0.0",

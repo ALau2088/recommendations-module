@@ -1,14 +1,18 @@
 const express = require('express');
 const model = require('../database/index');
 // const path = require('path');
+const cors = require('cors')
 
 const port = 3004;
 const app = express();
+
+app.use(cors());
 
 app.use(require('morgan')('dev'));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use('/', express.static('public'))
 app.use('/listing/:id', express.static('public'));
 
 
